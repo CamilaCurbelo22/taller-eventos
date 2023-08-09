@@ -6,7 +6,8 @@ theDiv.addEventListener("click", function() {
     alert("Hola! Soy el div");
 });
 
-theButton.addEventListener("click", function() {
+theButton.addEventListener("click", function(event) {
+    event.stopPropagation();
     alert("Hola!");
 });
 
